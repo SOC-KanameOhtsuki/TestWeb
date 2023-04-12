@@ -1,0 +1,409 @@
+.App {
+  width: 100%;
+  height: 100vh;
+}
+html {
+  font-family: system-ui, /* macOS 10.11-10.12 */ -apple-system,
+    /* Windows 6+ */ "Segoe UI", /* Android 4+ */ "Roboto",
+    /* Ubuntu 10.10+ */ "Ubuntu", /* Gnome 3+ */ "Cantarell",
+    /* KDE Plasma 5+ */ "Noto Sans", /* fallback */ sans-serif,
+    /* macOS emoji */ "Apple Color Emoji", /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol", /* Linux emoji */ "Noto Color Emoji";
+}
+body {
+  position: relative;
+  display: block;
+  background: #fff;
+}
+.iblock {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+i.icon {
+  display: inline-block;
+}
+.form-signin .btn-login {
+  color: #fff;
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
+  border-radius: 999px;
+  max-width: 250px;
+  height: 55px;
+  box-shadow: none;
+}
+
+/* area-logo ------------------ */
+.area-logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  height: 28.5vh;
+  overflow: hidden;
+}
+.area-logo::before,
+.area-logo::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.area-logo .box-logo {
+  display: flex;
+  position: relative;
+  width: 620px;
+  align-items: flex-end;
+  bottom: -4px;
+}
+.area-logo .box-logo::before {
+  content: "";
+  position: absolute;
+  top: -43%;
+  left: 13%;
+  width: 96px;
+  height: 95px;
+  display: inline-block;
+  background: url("/static/img/i-logo-bird.svg") no-repeat center top;
+  background-size: contain;
+  z-index: +1;
+}
+
+.area-logo .box-logo .logo-mark {
+  position: relative;
+  width: 145px;
+  height: 152px;
+}
+.area-logo .box-logo .logo-txt {
+  padding: 0 15px 0 25px;
+  margin: 0;
+  flex: 1;
+}
+.area-logo .box-logo .logo-txt .sitename {
+  position: relative;
+  width: 400px;
+  bottom: -12px;
+  display: inline-block;
+}
+
+.area-logo .box-logo .logo-txt .sitename::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.area-logo .box-logo .logo-txt .sitename img {
+  width: 100%;
+  height: auto;
+}
+
+.area-logo .box-logo .logo-security {
+  position: relative;
+  width: 38px;
+  top: -35px;
+}
+.area-logo .box-logo .logo-security img {
+  width: 100%;
+  height: auto;
+}
+/* area-main -------------------- */
+.area-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 71.5vh;
+  background-color: #a0ccfb;
+}
+.area-main::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: url("/static/img/bg-login-world.svg") no-repeat center 50%;
+  background-size: 105% auto;
+  opacity: 0.2;
+}
+.area-main > div {
+  z-index: +1;
+}
+/* form-signin ------------------ */
+.form-signin {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  z-index: +1;
+}
+.form-signin .form-control {
+  border: none;
+  border-radius: 0;
+}
+.form-signin .form-item.has-icon {
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+}
+
+.form-signin .form-item.has-icon.box-txtarea {
+  padding: 5px 0;
+}
+
+.form-signin .form-item.has-icon .icon {
+  width: 50px;
+  height: 55px;
+  background-size: 30px auto;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+}
+.form-signin .form-item.has-icon .i-user {
+  background-image: url("/static/img/i-user.svg");
+}
+.form-signin .form-item.has-icon .i-pw {
+  background-image: url("/static/img/i-pw.svg");
+}
+.form-signin .form-item.has-icon .i-lang {
+  background-image: url("/static/img/i-lang.svg");
+}
+.form-signin .form-floating {
+  flex: 1;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin .form-select {
+  padding: 0 15px 0 0;
+  border: none;
+  box-sizing: border-box;
+}
+.form-signin .box-select {
+  flex: 1;
+}
+.form-signin .form-select:focus,
+.form-signin .form-control:focus {
+  box-shadow: none;
+}
+
+.MuiInputBase-formControl::before,
+.MuiInputBase-formControl::after {
+  border: none !important;
+}
+.MuiInputBase-formControl {
+  background: #fff !important;
+}
+.box-select label {
+  z-index: +1;
+}
+.MuiInputLabel-root.Mui-focused {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.MuiInputBase-formControl {
+  margin-top: 0 !important;
+}
+.MuiInputBase-input:focus {
+  background-color: #fff !important;
+}
+.MuiSelect-select {
+  text-align: left;
+}
+
+/* linktxt ------------------- */
+.linktxt-center {
+  justify-content: center;
+}
+.linktxt-dark {
+  position: relative;
+  color: #252229;
+  text-decoration: underline;
+}
+.linktxt-dark.has-arrow {
+  padding-left: 15px;
+}
+.linktxt-dark.has-arrow::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #252229;
+  border-right: 1px solid #252229;
+  transform: translateY(-50%) rotate(45deg);
+  transform-origin: center;
+}
+.linktxt-dark:hover {
+  text-decoration: none;
+  color: #252229;
+}
+/* btnarea */
+.btnarea {
+  justify-content: center;
+}
+
+.att-txt {
+  font-size: 0.72rem !important;
+}
+.catch-m {
+  text-align: center;
+  padding-top: 30px;
+  letter-spacing: 0.4em;
+}
+/* area-copy ------------------- */
+.area-copy {
+  padding: 25px 0;
+  z-index: +1;
+}
+.area-copy img {
+  width: 120px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  /* area-logo */
+  .area-logo {
+    height: 25vh;
+  }
+  .area-logo .box-logo {
+    transform: scale(0.8);
+    transform-origin: bottom center;
+  }
+  /* area-main */
+  .area-main {
+    height: 75vh;
+  }
+  .area-main::before {
+    background-size: 125% auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* area-logo */
+  .area-logo {
+    height: 23vh;
+  }
+  .area-logo .box-logo {
+    transform: scale(0.6);
+  }
+  .area-logo .box-logo .logo-mark {
+    transform: scale(0.7);
+    transform-origin: right bottom;
+  }
+  .area-logo .box-logo::before {
+    top: -18%;
+    transform: scale(0.9);
+  }
+  .area-logo .box-logo .logo-txt {
+    padding: 0;
+    transform: scale(0.8);
+    margin-left: -20px;
+  }
+  .area-logo .box-logo .logo-txt .sitename {
+    bottom: -18px;
+  }
+  .area-logo .box-logo .logo-txt .sitename img {
+    transform: scale(1);
+    transform-origin: bottom;
+  }
+  .area-logo .box-logo .logo-security {
+    top: -30px;
+    right: 35px;
+    transform: scale(1.2);
+  }
+
+  /* area-main */
+  .area-main {
+    height: 77vh;
+  }
+  .area-main div {
+    width: 100%;
+  }
+  .form-signin {
+    max-width: none;
+    padding: 0;
+  }
+  .form-signin .form-item.has-icon {
+    min-width: inherit;
+  }
+  .catch-m {
+    padding-top: 15px;
+  }
+  .area-copy img {
+    width: 100px;
+  }
+}
+
+/* area-logo season --------------- */
+/* season-xmas 12月*/
+.area-logo.ssn-xmas::before {
+  background: url("/static/img/bg-xmas-tree.png") no-repeat left bottom;
+  background-size: 100% auto;
+  opacity: 0.05;
+}
+.area-logo.ssn-xmas .box-logo .logo-txt .sitename::after {
+  left: 0;
+  top: -65px;
+  background: url("/static/img/bg-login-xmas.svg") no-repeat center top;
+  background-size: 250px auto;
+}
+
+@media (max-width: 480px) {
+  .area-logo.ssn-xmas::before {
+    background-size: 150% auto;
+  }
+  .area-logo.ssn-xmas .box-logo .logo-txt .sitename::after {
+    width: 150%;
+    height: 150%;
+    transform: scale(0.8);
+    left: -5px;
+    right: -13px;
+    transform-origin: left;
+    background-size: contain;
+  }
+}
+
+/* season-snow 雪景色*/
+.area-logo.ssn-snow::before {
+  background-image: url("/static/img/bg-snow.svg"),
+    url("/static/img/bg-snow-sky.png"), url("/static/img/bg-snow-grade.png");
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: right bottom, center top, left top;
+  background-size: 70% auto, 100% auto, auto 100%;
+}
+
+.area-logo.ssn-snow .box-logo .logo-txt .sitename::after {
+  left: 0;
+  top: -70px;
+  height: 62px;
+  background: url("/static/img/logo-snow-ski.svg") no-repeat center top;
+  background-size: 92px auto;
+}
+
+@media (max-width: 767px) {
+  .area-logo.ssn-snow::before {
+    background-size: 85% auto, 820px auto, auto 100%;
+  }
+
+  .area-logo.ssn-snow .box-logo .logo-txt .sitename::after {
+    top: -75px;
+  }
+}
+
+@media (max-width: 480px) {
+  .area-logo.ssn-snow .box-logo .logo-txt .sitename::after {
+    background-size: 95px auto;
+    height: 100px;
+    top: -70px;
+  }
+}

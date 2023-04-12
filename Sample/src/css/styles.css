@@ -1,0 +1,168 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html[lang="ja"] body {
+  font-family: system-ui, /* macOS 10.11-10.12 */ -apple-system,
+    /* Windows 6+ */ "Segoe UI", /* Android 4+ */ "Roboto",
+    /* Ubuntu 10.10+ */ "Ubuntu", /* Gnome 3+ */ "Cantarell",
+    /* KDE Plasma 5+ */ "Noto Sans", /* fallback */ sans-serif,
+    /* macOS emoji */ "Apple Color Emoji", /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol", /* Linux emoji */ "Noto Color Emoji";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* layout --------------------- */
+.layout-a.add-header {
+}
+
+/* Header --------------------- */
+header.bg-header {
+  box-shadow: none;
+  background-color: #e2ebf4 !important;
+  color: #252229;
+}
+
+.bg-header .welcome-text,
+.bg-header .welcome-sub-text {
+  color: #444;
+}
+.bg-header .welcome-text {
+  font-size: 1.05rem;
+}
+.bg-header .welcome-text .mini {
+  font-size: 75%;
+}
+.area-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area-logo .site-logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+.area-logo .site-name {
+  font-family: Arial, Helvetica, "sans-serif";
+  font-weight: 900;
+  color: #252229;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+/* sidebar ------------- */
+.sidenav .MuiListItemText-primary {
+  font-size: 0.8rem;
+}
+.sidenav .menu-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #555;
+}
+.sidenav .has-submenu {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+}
+.sidenav .has-submenu .box-icon {
+  min-width: 56px;
+}
+.sidenav .has-submenu > div {
+  box-shadow: none;
+  background: none;
+}
+.sidenav .has-submenu .txt-submenu {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.sidenav .has-submenu .ttl-sub1 {
+  display: flex;
+  margin: 0;
+  padding-right: 0;
+}
+.sidenav .has-submenu .MuiAccordionSummary-content {
+  align-items: center;
+}
+
+/* main --------------------- */
+.bg-main {
+  background-color: #e2ebf4 !important;
+}
+/* dashboard --------------------- */
+/* MuiPaper-root */
+.MuiPaper-root {
+  box-shadow: 0 0 0 0 rgba(90, 113, 208, 0.11),
+    0 4px 16px 0 rgba(167, 175, 183, 0.33) !important;
+}
+/* tab */
+.icon-tab.Mui-selected {
+  color: #1f3bb3;
+}
+.MuiTabs-indicator {
+  background-color: #1f3bb3 !important;
+}
+.mdi-icon {
+}
+.list-iconbtn {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-iconbtn.col-5 .ban-iconbtn {
+  width: 20%;
+}
+.list-iconbtn .ban-iconbtn {
+  max-width: 150px;
+  min-width: 110px;
+}
+.list-iconbtn .ban-iconbtn.btn-square {
+  position: relative;
+  margin: 5px;
+}
+.list-iconbtn .ban-iconbtn.btn-square a {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 100% 0 0 0;
+  box-shadow: 0 0 0 0 rgb(90 113 208 / 11%), 0 4px 16px 0 rgb(167 175 183 / 33%);
+  -webkit-box-shadow: 0 0 0 0 rgb(90 113 208 / 11%),
+    0 4px 16px 0 rgb(167 175 183 / 33%);
+  background-color: rgba(31, 59, 179, 0.2);
+  background-image: none;
+  border-color: rgba(31, 59, 179, 0);
+  transition: all ease 0.28s;
+  border-radius: 5px;
+}
+.list-iconbtn .ban-iconbtn.btn-square a:hover {
+  box-shadow: none;
+  color: #ffffff;
+  background-color: #1f3bb3;
+  border-color: #1f3bb3;
+}
+.list-iconbtn .ban-iconbtn.btn-square .inner-square {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.05em;
+}
+.list-iconbtn .ban-iconbtn.btn-square .icon-lg {
+  font-size: 1.7rem;
+  display: block;
+  margin-bottom: 10px;
+}
+.list-iconbtn .ban-iconbtn.btn-square .txt-ban {
+  font-size: 0.9rem;
+}
